@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F006E9D21AEC78A00531A3A /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F006E9C21AEC78A00531A3A /* test.mp3 */; };
+		6F006E9F21AED8F900531A3A /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F006E9E21AED8F900531A3A /* BoardCell.swift */; };
 		6F1120AC21AC99BC004FB013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1120AB21AC99BC004FB013 /* AppDelegate.swift */; };
 		6F1120AE21AC99BC004FB013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1120AD21AC99BC004FB013 /* ViewController.swift */; };
 		6F1120B121AC99BC004FB013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1120AF21AC99BC004FB013 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F006E9C21AEC78A00531A3A /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		6F006E9E21AED8F900531A3A /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
 		6F1120A821AC99BC004FB013 /* sound board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sound board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1120AB21AC99BC004FB013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F1120AD21AC99BC004FB013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +58,24 @@
 		6F1120AA21AC99BC004FB013 /* sound board */ = {
 			isa = PBXGroup;
 			children = (
+				6F85785721AE0C070041A61A /* sounds */,
 				6F1120AB21AC99BC004FB013 /* AppDelegate.swift */,
 				6F1120AD21AC99BC004FB013 /* ViewController.swift */,
 				6F1120AF21AC99BC004FB013 /* Main.storyboard */,
 				6F1120B221AC99BE004FB013 /* Assets.xcassets */,
 				6F1120B421AC99BE004FB013 /* LaunchScreen.storyboard */,
 				6F1120B721AC99BE004FB013 /* Info.plist */,
+				6F006E9E21AED8F900531A3A /* BoardCell.swift */,
 			);
 			path = "sound board";
+			sourceTree = "<group>";
+		};
+		6F85785721AE0C070041A61A /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6F006E9C21AEC78A00531A3A /* test.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,11 @@
 				TargetAttributes = {
 					6F1120A721AC99BC004FB013 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1120B621AC99BE004FB013 /* LaunchScreen.storyboard in Resources */,
+				6F006E9D21AEC78A00531A3A /* test.mp3 in Resources */,
 				6F1120B321AC99BE004FB013 /* Assets.xcassets in Resources */,
 				6F1120B121AC99BC004FB013 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1120AE21AC99BC004FB013 /* ViewController.swift in Sources */,
+				6F006E9F21AED8F900531A3A /* BoardCell.swift in Sources */,
 				6F1120AC21AC99BC004FB013 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
