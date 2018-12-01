@@ -10,11 +10,12 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    @IBOutlet weak var soundCollectionView: UICollectionView!
     
     var audioPlayer = AVAudioPlayer()
     var playbackFlag = false
 
-    let sounds = ["test"]
+    var sounds = [(sound: "test", image:"buttonOff"), (sound: "test", image:"buttonOff")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     //LOGIC
     
-    func prepareForPlay(nameOfSound: String) {
+    func prepareForPlay(indexOfSound: Int) {
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: nameOfSound, ofType: "mp3")!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: sounds[indexOfSound].sound, ofType: "mp3")!))
             audioPlayer.prepareToPlay()
             
             let audioSession = AVAudioSession.sharedInstance()
@@ -45,14 +46,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
-    func buttonPressed(nameOfSound: String) {
+    func buttonPressed(index: Int) {
         if playbackFlag {
             playbackFlag = !playbackFlag
             audioPlayer.stop()
             audioPlayer.currentTime = 0
+            sounds[index].image = "buttonOff"
+            soundCollectionView.reloadData()
+            print(index)
         } else {
             playbackFlag = !playbackFlag
-            prepareForPlay(nameOfSound: nameOfSound)
+            prepareForPlay(indexOfSound: index)
+            sounds[index].image = "buttonOn"
+            soundCollectionView.reloadData()
+            print(sounds)
             audioPlayer.play()
         }
     }
@@ -64,13 +71,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let boardCell = collectionView.dequeueReusableCell(withReuseIdentifier: "boardCell", for: indexPath)
-        
-        return boardCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "boardCell", for: indexPath) as! BoardCell
+        cell.nameLabel.text = sounds[indexPath.item].sound
+        cell.buttonAppearance.image = UIImage(named: sounds[indexPath.item].image)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        buttonPressed(nameOfSound: sounds[indexPath.item])
+        buttonPressed(index: indexPath.row)
     }
     
 }
