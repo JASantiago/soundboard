@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F006E9D21AEC78A00531A3A /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F006E9C21AEC78A00531A3A /* test.mp3 */; };
 		6F006E9F21AED8F900531A3A /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F006E9E21AED8F900531A3A /* BoardCell.swift */; };
 		6F1120AC21AC99BC004FB013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1120AB21AC99BC004FB013 /* AppDelegate.swift */; };
 		6F1120AE21AC99BC004FB013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1120AD21AC99BC004FB013 /* ViewController.swift */; };
 		6F1120B121AC99BC004FB013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1120AF21AC99BC004FB013 /* Main.storyboard */; };
 		6F1120B321AC99BE004FB013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1120B221AC99BE004FB013 /* Assets.xcassets */; };
 		6F1120B621AC99BE004FB013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1120B421AC99BE004FB013 /* LaunchScreen.storyboard */; };
+		6F2B3AB721B8960D006D64F3 /* spongebob-eternity.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AAA21B8960B006D64F3 /* spongebob-eternity.mp3 */; };
+		6F2B3AB821B8960D006D64F3 /* elevator-loft.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AAB21B8960B006D64F3 /* elevator-loft.mp3 */; };
+		6F2B3AB921B8960D006D64F3 /* finish-him.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AAC21B8960C006D64F3 /* finish-him.mp3 */; };
+		6F2B3ABA21B8960D006D64F3 /* shop-zelda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AAD21B8960C006D64F3 /* shop-zelda.mp3 */; };
+		6F2B3ABB21B8960D006D64F3 /* spongebob-new-narrator.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AAE21B8960C006D64F3 /* spongebob-new-narrator.mp3 */; };
+		6F2B3ABC21B8960D006D64F3 /* pokemon-critical-hp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AAF21B8960C006D64F3 /* pokemon-critical-hp.mp3 */; };
+		6F2B3ABD21B8960D006D64F3 /* spongebob-eventually.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB021B8960C006D64F3 /* spongebob-eventually.mp3 */; };
+		6F2B3ABE21B8960D006D64F3 /* headshot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB121B8960C006D64F3 /* headshot.mp3 */; };
+		6F2B3ABF21B8960D006D64F3 /* leeroy-jenkins.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB221B8960C006D64F3 /* leeroy-jenkins.mp3 */; };
+		6F2B3AC021B8960D006D64F3 /* item-zelda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB321B8960C006D64F3 /* item-zelda.mp3 */; };
+		6F2B3AC121B8960D006D64F3 /* elevator-bossa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB421B8960C006D64F3 /* elevator-bossa.mp3 */; };
+		6F2B3AC221B8960D006D64F3 /* spongebob-twothousandyears.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB521B8960C006D64F3 /* spongebob-twothousandyears.mp3 */; };
+		6F2B3AC321B8960D006D64F3 /* radio-beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F2B3AB621B8960C006D64F3 /* radio-beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F006E9C21AEC78A00531A3A /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		6F006E9E21AED8F900531A3A /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
 		6F1120A821AC99BC004FB013 /* sound board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sound board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1120AB21AC99BC004FB013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,19 @@
 		6F1120B221AC99BE004FB013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1120B521AC99BE004FB013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1120B721AC99BE004FB013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2B3AAA21B8960B006D64F3 /* spongebob-eternity.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spongebob-eternity.mp3"; sourceTree = "<group>"; };
+		6F2B3AAB21B8960B006D64F3 /* elevator-loft.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "elevator-loft.mp3"; sourceTree = "<group>"; };
+		6F2B3AAC21B8960C006D64F3 /* finish-him.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "finish-him.mp3"; sourceTree = "<group>"; };
+		6F2B3AAD21B8960C006D64F3 /* shop-zelda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "shop-zelda.mp3"; sourceTree = "<group>"; };
+		6F2B3AAE21B8960C006D64F3 /* spongebob-new-narrator.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spongebob-new-narrator.mp3"; sourceTree = "<group>"; };
+		6F2B3AAF21B8960C006D64F3 /* pokemon-critical-hp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "pokemon-critical-hp.mp3"; sourceTree = "<group>"; };
+		6F2B3AB021B8960C006D64F3 /* spongebob-eventually.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spongebob-eventually.mp3"; sourceTree = "<group>"; };
+		6F2B3AB121B8960C006D64F3 /* headshot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = headshot.mp3; sourceTree = "<group>"; };
+		6F2B3AB221B8960C006D64F3 /* leeroy-jenkins.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "leeroy-jenkins.mp3"; sourceTree = "<group>"; };
+		6F2B3AB321B8960C006D64F3 /* item-zelda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "item-zelda.mp3"; sourceTree = "<group>"; };
+		6F2B3AB421B8960C006D64F3 /* elevator-bossa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "elevator-bossa.mp3"; sourceTree = "<group>"; };
+		6F2B3AB521B8960C006D64F3 /* spongebob-twothousandyears.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spongebob-twothousandyears.mp3"; sourceTree = "<group>"; };
+		6F2B3AB621B8960C006D64F3 /* radio-beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "radio-beep.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +97,19 @@
 		6F85785721AE0C070041A61A /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				6F006E9C21AEC78A00531A3A /* test.mp3 */,
+				6F2B3AB421B8960C006D64F3 /* elevator-bossa.mp3 */,
+				6F2B3AAB21B8960B006D64F3 /* elevator-loft.mp3 */,
+				6F2B3AAC21B8960C006D64F3 /* finish-him.mp3 */,
+				6F2B3AB121B8960C006D64F3 /* headshot.mp3 */,
+				6F2B3AB321B8960C006D64F3 /* item-zelda.mp3 */,
+				6F2B3AB221B8960C006D64F3 /* leeroy-jenkins.mp3 */,
+				6F2B3AAF21B8960C006D64F3 /* pokemon-critical-hp.mp3 */,
+				6F2B3AB621B8960C006D64F3 /* radio-beep.mp3 */,
+				6F2B3AAD21B8960C006D64F3 /* shop-zelda.mp3 */,
+				6F2B3AAA21B8960B006D64F3 /* spongebob-eternity.mp3 */,
+				6F2B3AB021B8960C006D64F3 /* spongebob-eventually.mp3 */,
+				6F2B3AAE21B8960C006D64F3 /* spongebob-new-narrator.mp3 */,
+				6F2B3AB521B8960C006D64F3 /* spongebob-twothousandyears.mp3 */,
 			);
 			path = sounds;
 			sourceTree = "<group>";
@@ -142,9 +178,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1120B621AC99BE004FB013 /* LaunchScreen.storyboard in Resources */,
-				6F006E9D21AEC78A00531A3A /* test.mp3 in Resources */,
+				6F2B3AB721B8960D006D64F3 /* spongebob-eternity.mp3 in Resources */,
+				6F2B3ABA21B8960D006D64F3 /* shop-zelda.mp3 in Resources */,
+				6F2B3AB821B8960D006D64F3 /* elevator-loft.mp3 in Resources */,
 				6F1120B321AC99BE004FB013 /* Assets.xcassets in Resources */,
+				6F2B3AC021B8960D006D64F3 /* item-zelda.mp3 in Resources */,
+				6F2B3ABE21B8960D006D64F3 /* headshot.mp3 in Resources */,
+				6F2B3ABD21B8960D006D64F3 /* spongebob-eventually.mp3 in Resources */,
 				6F1120B121AC99BC004FB013 /* Main.storyboard in Resources */,
+				6F2B3ABC21B8960D006D64F3 /* pokemon-critical-hp.mp3 in Resources */,
+				6F2B3ABF21B8960D006D64F3 /* leeroy-jenkins.mp3 in Resources */,
+				6F2B3AC221B8960D006D64F3 /* spongebob-twothousandyears.mp3 in Resources */,
+				6F2B3AC121B8960D006D64F3 /* elevator-bossa.mp3 in Resources */,
+				6F2B3ABB21B8960D006D64F3 /* spongebob-new-narrator.mp3 in Resources */,
+				6F2B3AC321B8960D006D64F3 /* radio-beep.mp3 in Resources */,
+				6F2B3AB921B8960D006D64F3 /* finish-him.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
