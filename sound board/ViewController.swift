@@ -14,8 +14,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var audioPlayer = AVAudioPlayer()
     var playbackFlag = false
-
-    var sounds = [(sound: "test", image:"buttonOff"), (sound: "test", image:"buttonOff")]
+    var lastPressedIndex: Int = 0
+    var sounds = [(sound: "elevator-bossa", image:"buttonOff"), (sound: "elevator-loft", image:"buttonOff"), (sound: "finish-him", image:"buttonOff"), (sound: "headshot", image:"buttonOff"), (sound: "item-zelda", image:"buttonOff"), (sound: "leeroy-jenkins", image:"buttonOff"), (sound: "pokemon-critical-hp", image:"buttonOff"), (sound: "radio-beep", image:"buttonOff"), (sound: "shop-zelda", image:"buttonOff"), (sound: "spongebob-eternity", image:"buttonOff"), (sound: "spongebob-eventually", image:"buttonOff"), (sound: "spongebob-new-narrator", image:"buttonOff"), (sound: "spongebob-twothousandyears", image:"buttonOff")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,20 +46,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
+    //TODO: when other button is pressed stop currently playing and play the new one
     func buttonPressed(index: Int) {
         if playbackFlag {
             playbackFlag = !playbackFlag
             audioPlayer.stop()
             audioPlayer.currentTime = 0
-            sounds[index].image = "buttonOff"
+            sounds[lastPressedIndex].image = "buttonOff"
             soundCollectionView.reloadData()
             print(index)
         } else {
             playbackFlag = !playbackFlag
             prepareForPlay(indexOfSound: index)
             sounds[index].image = "buttonOn"
+            lastPressedIndex = index
             soundCollectionView.reloadData()
-            print(sounds)
             audioPlayer.play()
         }
     }
